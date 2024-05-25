@@ -305,7 +305,6 @@ def fuzz(pathWasm, contractABI, feedbackFactory, in_atk=()):
 
         funcPriority = [key for key, value in sorted(priority.items(), key=lambda item: item[1], reverse=True) if value > 0]
         original_list = [key for key, value in sorted(priority.items(), key=lambda item: item[1], reverse=True) if value > 0]
-        original_list = ['bet', 'update', 'updatebj', 'clean', 'updateline', 'updateui']
         funcPriority = []
         for item in original_list:
             funcPriority.extend([item, item])
